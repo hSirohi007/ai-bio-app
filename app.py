@@ -27,7 +27,7 @@ if st.button("Analyze DNA"):
         st.subheader("Analysis Results")
         st.write("Sequence:", dna)
         st.write("Length:", len(dna))
-        st.write("f"GC content: {gc_percent:.2f}%")
+        st.write(f"GC content: {:.2f}%".format(gc_percent))
         st.write("Complement:", str(Seq(dna).complement()))
         st.write(
             "Reverse complement:",
